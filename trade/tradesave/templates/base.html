@@ -1,0 +1,38 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Default title{% endblock title %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'tradesave/css/styles.css'%}"/>
+</head>
+<body>
+
+    <header>
+        <h1>{% block header %}{% endblock header %}</h1>
+    </header>
+
+    <nav>
+        <a href="/indexbase" class="button">Головна</a>
+        <a href="/contactbase" class="button">Контакти</a>
+        <a href="/aboutbase" class="button">Про сайт</a>
+        <a href="/tradebase" class="button">Тогри</a>
+        <a href="/userbase" class="button">Користувач</a>
+        <a href="/admin" class="button">Вхід</a>
+    </nav>
+
+    <section>
+        <h2>Ласкаво просимо на сайт!</h2>
+        <!-- інформація з бази даних -->
+        {% block content %}{% endblock content %}
+    </section>
+
+    <footer>
+        <div>My Auction. 2023.</div>
+    </footer>
+
+    <script src="{% static 'tradesave/js/script.js' %}"></script>
+</body>
+</html>

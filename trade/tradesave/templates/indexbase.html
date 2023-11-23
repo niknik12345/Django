@@ -1,0 +1,26 @@
+
+{% extends "base.html" %}
+
+
+{% block title %}Index{% endblock title %}
+
+
+{% block header %}Главная{% endblock header %}
+
+
+
+{% block content %}
+    {% for lot in lots %}
+    <div>
+        <h3 class="lot-name" onclick="showInfo(this)">{{ lot.lot_name }}</h3>
+        <div class="additional-info">
+            <p>Тип Лоту: {{ lot.types.types_name }}</p>
+            <p>Статус: {{ lot.status.status_name }}</p>
+            <p>Ціна: {{ lot.lot_price }}</p>
+            <img src="{{ lot.lot_quantity.url }}" alt="{{ lot.lot_name }} Photo">
+            <p>Категорія: {{ lot.category.category_name }}</p>
+            <p>Коментар: {{ lot.lot_comment }}</p>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock content %}

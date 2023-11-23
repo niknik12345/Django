@@ -1,0 +1,14 @@
+python -m venv .venv
+
+PS C:\Users\NikTech\OneDrive - Zaporizhzhya State Engineering Academy\ZNU\Курс3Семестр1\Django> auction\Scripts\activate
+
+(auction) PS C:\Users\NikTech\OneDrive - Zaporizhzhya State Engineering Academy\ZNU\Курс3Семестр1\Django> cd .\trade\
+
+(auction) PS C:\Users\NikTech\OneDrive - Zaporizhzhya State Engineering Academy\ZNU\Курс3Семестр1\Django\trade> python manage.py runserver
+
+(auction) PS C:\Users\NikTech\OneDrive - Zaporizhzhya State Engineering Academy\ZNU\Курс3Семестр1\Django\trade> django-admin startproject tradesave
+
+(auction) PS C:\Users\NikTech\OneDrive - Zaporizhzhya State Engineering Academy\ZNU\Курс3Семестр1\Django\trade> python manage.py makemigrations tradesave
+
+(auction) PS C:\Users\NikTech\OneDrive - Zaporizhzhya State Engineering Academy\ZNU\Курс3Семестр1\Django\trade> python manage.py migrate
+
