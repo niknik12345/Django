@@ -1,6 +1,6 @@
 python -m venv .venv
 
-PS C:\Users\NikTech\OneDrive - Zaporizhzhya State Engineering Academy\ZNU\Курс3Семестр1\Django> auction\Scripts\activate
+PS C:\Users\NikTech\OneDrive - Zaporizhzhya State Engineering Academy\ZNU\Курс3Семестр1\Django> auction\Scripts\activate    (source ./activate)
 
 (auction) PS C:\Users\NikTech\OneDrive - Zaporizhzhya State Engineering Academy\ZNU\Курс3Семестр1\Django> cd .\trade\
 

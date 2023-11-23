@@ -26,7 +26,7 @@ from django.conf.urls.static import static
 from tradesave.views import * 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     path('', index),#http://127.0.0.1:8000/index/
     path('user/', user),#http://127.0.0.1:8000/user/
     path('trade/', trade),#http://127.0.0.1:8000/trade/
@@ -36,11 +36,12 @@ urlpatterns = [
     #path("about/", TemplateView.as_view(template_name="about.html")),#http://127.0.0.1:8000/about/
 
     ############################################################
-    path("indexbase/", indexbase),#http://127.0.0.1:8000/indexbase/
-    path("contactbase/", contactbase),#http://127.0.0.1:8000/contactbase/
-    path("aboutbase/", aboutbase),#http://127.0.0.1:8000/aboutbase/
-    path("tradebase/", tradebase),#http://127.0.0.1:8000/tradebase/
-    path("userbase/", userbase),#http://127.0.0.1:8000/userbase/
+    path("indexbase", indexbase),#http://127.0.0.1:8000/indexbase/
+    #path('indexbase/', indexbase, name='indexbase'),
+    path("contactbase", contactbase),#http://127.0.0.1:8000/contactbase/
+    path("aboutbase", aboutbase),#http://127.0.0.1:8000/aboutbase/
+    path("tradebase", tradebase),#http://127.0.0.1:8000/tradebase/
+    path("userbase", userbase),#http://127.0.0.1:8000/userbase/
 
 
 
